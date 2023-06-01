@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiter-> Create Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="w-[250px] pt-[54px] fixed top-0 left-0 bg-slate-800 min-h-screen">
+        <ul class="flex flex-col gap-2">
+            <li class="bg-orange-500 py-2 px-4"> <a href="./display.html" class="w-full py-4">Available foods</a>
+            </li>
+            <li class="bg-orange-500 py-2 px-4"> <a href="./new-order.html" class="w-full py-4">New Order Form</a>
+            </li>
+            <li class="bg-orange-500 py-2 px-4"> <a href="./ready-to-serve.html" class="w-full py-4">Ready to serve</a>
+            </li>
+            <li class="bg-orange-500 py-2 px-4"> <a href="./all-order.html" class="w-full py-4">All order list</a>
+            </li>
+            <li class="bg-orange-500 py-2 px-4"> <a href="" class="w-full py-4">Profile</a>
+            </li>
+        </ul>
+    </aside>
+    <header class="h-[54px] flex items-center justify-center fixed top-0 left-0 w-full bg-slate-800 text-center">
+    </header>
+    <main class="pl-[250px] pt-[54px]">
+        <div class="customer-details">
+            <h1 class="p-4">Customer Details</h1>
+            <form action="" class="flex flex-col gap-4">
+                <div class="grid grid-cols-2 gap-4 px-4">
+                    <input type="text" class="border border-slate-500 px-4 py-3 w-full" placeholder="Customer Name">
+                    <input type="text" class="border border-slate-500 px-4 py-3 w-full" placeholder="Customer email">
+                </div>
+                <div class="grid grid-cols-2 gap-4 px-4">
+                    <input type="text" class="border border-slate-500 px-4 py-3 w-full" placeholder="Customer Phone">
+                    <input type="text" class="border border-slate-500 px-4 py-3 w-full" placeholder="Table Number">
+                </div>
+                <div class="flex justify-end px-4 gap-2">
+                    <button class="py-3 px-8 text-white bg-orange-500 w-fit">Create Order</button>
+                    <button class="py-3 px-8 text-white bg-blue-500 w-fit">Add More+</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="h-12"></div>
+
+        <h1 class="p-4">Order List</h1>
+        <div class="h-6"></div>
+
+        <table class="w-full">
+            <thead>
+                <tr class="bg-slate-600 text-white">
+                    <th class="py-3">No.</th>
+                    <th>Dish Name</th>
+                    <th>Qantity</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-slate-300 text-center">
+                    <td class="py-3">01</td>
+                    <td>Fried Chicken</td>
+                    <td>
+                        <button class="px-2 bg-slate-600 text-white"> - </button>
+                        <span>4</span>
+                        <button class="px-2 bg-slate-600 text-white"> + </button>
+                    </td>
+                    <td>400 /-</td>
+                    <td>10%</td>
+                    <td>
+                        <button class="px-2 py-2 text-white bg-rose-500">Remove</button>
+                    </td>
+                </tr>
+                <tr class="bg-slate-200 text-center">
+                    <td class="py-3">01</td>
+                    <td>Fried Chicken</td>
+                    <td>
+                        <button class="px-2 bg-slate-600 text-white"> - </button>
+                        <span>4</span>
+                        <button class="px-2 bg-slate-600 text-white"> + </button>
+                    </td>
+                    <td>400 /-</td>
+                    <td>10%</td>
+                    <td>
+                        <button class="px-2 py-2 text-white bg-rose-500">Remove</button>
+                    </td>
+                </tr>
+                <tr class="bg-slate-300 text-center">
+                    <td class="py-3">01</td>
+                    <td>Fried Chicken</td>
+                    <td>
+                        <button class="px-2 bg-slate-600 text-white"> - </button>
+                        <span>4</span>
+                        <button class="px-2 bg-slate-600 text-white"> + </button>
+                    </td>
+                    <td>400 /-</td>
+                    <td>10%</td>
+                    <td>
+                        <button class="px-2 py-2 text-white bg-rose-500">Remove</button>
+                    </td>
+                </tr>
+                <tr class="bg-slate-400 text-center">
+                    <td class="py-3">01</td>
+                    <td>Fried Chicken</td>
+                    <td>
+                        <button class="px-2 bg-slate-600 text-white"> - </button>
+                        <span>4</span>
+                        <button class="px-2 bg-slate-600 text-white"> + </button>
+                    </td>
+                    <td>400 /-</td>
+                    <td>10%</td>
+                    <td>
+                        <button class="px-2 py-2 text-white bg-rose-500">Remove</button>
+                    </td>
+                </tr>
+                <tr class="bg-slate-500 text-white text-center">
+                    <th class="py-3">Total</th>
+                    <th></th>
+                    <th>
+                        <span>16</span>
+                    </th>
+                    <th>2400 /-</th>
+                    <th></th>
+                    <th>
+                        <button class="px-2 py-2 text-white bg-rose-500">Confirm</button>
+                        <button class="px-2 py-2 text-white bg-rose-500">Remove All</button>
+                    </th>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
